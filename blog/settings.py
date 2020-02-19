@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'boke.apps.BokeConfig',
-    'account.apps.AccountConfig'
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +126,13 @@ STATICFILES_DIRS = (
 )
 
 LOGIN_REDIRECT_URL = '/blog/'
+
+EMAIL_HOST = 'smtp.126.com'
+EMAIL_HOST_USER = 'xxxxxc@126.com'
+EMAIL_HOST_PASSWORD = 'xxxx'
+EMAIL_PORT = 25
+EMAIL_USE_TLS = False
+DEFAULT_FROM_EMAIL = 'xxxxxx@126.com'
+
+#收不到邮件时，调试用，邮件内容打印到终端
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
