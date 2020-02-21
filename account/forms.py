@@ -4,7 +4,7 @@
 #__author__ = 'ren_mcc'
 from django import forms
 from django.contrib.auth.models import User
-from .models import UserProfile
+from .models import *
 
 class RegistrationForm(forms.ModelForm):
     password = forms.CharField(label="Password", widget=forms.PasswordInput)
@@ -27,3 +27,14 @@ class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
         fields = ('phone', 'birth')
+
+#个人信息类
+class UserInfoForm(forms.ModelForm):
+    class Meta:
+        model = UserInfo
+        fields = ("school","company","profession","address","aboutme")
+
+class UserForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ("email",)
