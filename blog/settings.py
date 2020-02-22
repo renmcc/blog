@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'boke.apps.BokeConfig',
     'account.apps.AccountConfig',
+    'article.apps.ArticleConfig',
 ]
 
 MIDDLEWARE = [

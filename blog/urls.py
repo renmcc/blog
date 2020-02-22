@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^$', include('boke.urls')),
     url(r'^blog/', include('boke.urls', namespace='blog', app_name='blog')),
     url(r'^account/', include('account.urls', namespace='account', app_name='account')),
+    url(r'^article/', include('article.urls', namespace='article', app_name='article')),
 ]
