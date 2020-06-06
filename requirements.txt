@@ -1,4 +1,4 @@
-Django==1.10.1
+Django==1.11.29
 Pillow==7.0.0
 pytz
 
